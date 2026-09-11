@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Marcellus&family=Jost:wght@200;300;400;500&family=Noto+Serif+Tamil:wght@200;300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ivory: #FBF5EA;
+  --maroon: #5C1717;
+  --gold: #A87F22;
+  --gold-light: #DCB94D;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FBF5EA;
+  color: #3D0F0F;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FBF5EA;
+}
+::-webkit-scrollbar-thumb {
+  background: #A87F22;
+  border-radius: 3px;
+}
+
+/* Ornamental divider */
+.ornament-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.ornament-line::before,
+.ornament-line::after {
+  content: '';
+  height: 1px;
+  flex: 1;
+  max-width: 80px;
+  background: linear-gradient(90deg, transparent, #A87F22, transparent);
+}
+
+/* Text gradient for gold */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #DCB94D 0%, #A87F22 50%, #DCB94D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Decorative border frame */
+.ornate-frame {
+  position: relative;
+  padding: 12px;
+}
+
+.ornate-frame::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(168, 127, 34, 0.4);
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.ornate-frame::after {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px solid rgba(168, 127, 34, 0.2);
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+/* Corner ornaments */
+.corner-ornament {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+}
+
+.corner-ornament.tl { top: 0; left: 0; border-top: 2px solid #A87F22; border-left: 2px solid #A87F22; }
+.corner-ornament.tr { top: 0; right: 0; border-top: 2px solid #A87F22; border-right: 2px solid #A87F22; }
+.corner-ornament.bl { bottom: 0; left: 0; border-bottom: 2px solid #A87F22; border-left: 2px solid #A87F22; }
+.corner-ornament.br { bottom: 0; right: 0; border-bottom: 2px solid #A87F22; border-right: 2px solid #A87F22; }
+
+/* Kolam dot pattern background */
+.kolam-bg {
+  background-image: radial-gradient(circle, rgba(168, 127, 34, 0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Temple arch shape clip */
+.temple-arch {
+  clip-path: path('M 0 100 L 0 30 Q 50 0 100 30 L 100 100 Z');
+}
+
+/* Smooth section reveal */
+.section-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.section-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Letter spacing utilities */
+.tracking-luxe { letter-spacing: 0.3em; }
+.tracking-wide-luxe { letter-spacing: 0.2em; }
