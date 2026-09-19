@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { IMAGES, WEDDING } from '@/data/images';
 import { TempleArch, MangoLeafChain } from '@/components/Ornaments';
+import gopuram from '@/data/gopuram.png';
 
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -35,8 +36,8 @@ export function Hero() {
           className="absolute inset-0 z-20"
         >
           <img
-            src={IMAGES.coupleStory}
-            alt={`${WEDDING.groom} and ${WEDDING.bride}`}
+            src={gopuram}
+            alt="Temple gopuram"
             className="h-full w-full object-contain object-center"
           />
         </motion.div>
