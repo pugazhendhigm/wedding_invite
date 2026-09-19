@@ -1,6 +1,4 @@
 import { Hero } from '@/sections/Hero';
-import { CoupleStory } from '@/sections/CoupleStory';
-import { CinematicSection } from '@/sections/CinematicSection';
 import { WeddingDetails } from '@/sections/WeddingDetails';
 import { Timeline } from '@/sections/Timeline';
 import { WideBackdrop1 } from '@/sections/WideBackdrop1';
@@ -20,11 +18,9 @@ function App() {
   return (
     <main className="min-h-screen bg-ivory-50">
       <Hero />
-      <CoupleStory />
-      <CinematicSection />
       <WeddingDetails />
       <Timeline />
-      <WideBackdrop1 />
+      {/* <WideBackdrop1 /> */}
       <StoryGallery />
       <TamilTypography />
       <CoupleGallery />
