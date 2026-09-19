@@ -34,9 +34,9 @@ export function FamilyBlessings() {
                   <p className="font-sans text-[10px] tracking-luxe text-gold-700 uppercase mb-1">
                     {blessing.relation}
                   </p>
-                  <p className="font-display text-lg sm:text-xl text-maroon-800">
-                    {blessing.names}
-                  </p>
+                  <div className="space-y-1 font-display text-lg text-maroon-800 sm:text-xl">
+                    {blessing.names.map((name) => <p key={name}>{name}</p>)}
+                  </div>
                   <p className="font-tamil text-sm text-gold-600 mt-1">
                     {blessing.tamil}
                   </p>

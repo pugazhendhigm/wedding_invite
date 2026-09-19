@@ -99,7 +99,7 @@ export function Hero() {
         >
           <MangoLeafChain className="h-4 w-40 sm:w-56 text-gold-400/60" />
           <p className="font-tamil text-base sm:text-lg text-ivory-200/90 tracking-wide">
-            கார்த்திக் &amp; வருணா
+            கார்த்தி &amp; வருணா
           </p>
           <p className="font-display text-sm sm:text-base tracking-wide-luxe text-ivory-200/80">
             {WEDDING.dateShort}

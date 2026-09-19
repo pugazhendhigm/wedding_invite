@@ -49,7 +49,7 @@ export function VenueRSVP() {
               <div className="relative rounded-sm overflow-hidden border border-gold-600/20 mb-4 h-48">
                 <iframe
                   title="Wedding venue map"
-                  src="https://www.google.com/maps?q=T+Nagar+Chennai+Tamil+Nadu&output=embed"
+                  src={WEDDING.mapEmbedUrl}
                   className="w-full h-full"
                   style={{ border: 0 }}
                   loading="lazy"

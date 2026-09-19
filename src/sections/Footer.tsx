@@ -10,7 +10,7 @@ export function Footer() {
         <div className="flex items-center justify-center gap-3 mb-4">
           <div className="h-px w-12 bg-gold-700/40" />
           <p className="font-tamil text-base text-gold-400/80">
-            கார்த்திக் &amp; வருணா
+            கார்த்தி &amp; வருணா
           </p>
           <div className="h-px w-12 bg-gold-700/40" />
         </div>

@@ -43,7 +43,7 @@ export function CoupleGallery() {
           <motion.div style={{ y: y2 }} className="space-y-6">
             <ScrollReveal delay={0.2}>
               <p className="font-tamil text-2xl sm:text-3xl text-gold-700 leading-relaxed">
-                கார்த்திக் மற்றும் வருணா
+                கார்த்தி மற்றும் வருணா
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.3}>

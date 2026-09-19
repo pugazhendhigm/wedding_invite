@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
 import { ScrollReveal } from '@/components/ScrollReveal';
 import { TempleArch, OrnamentalDivider } from '@/components/Ornaments';
+import { WEDDING } from '@/data/images';
+
+const targetDate = new Date(WEDDING.dateTime);
 
 function calculateTimeLeft(target: Date) {
   const now = new Date();
@@ -18,7 +21,6 @@ function calculateTimeLeft(target: Date) {
 }
 
 export function Countdown() {
-  const targetDate = new Date('2026-12-14T07:00:00+05:30');
   const [timeLeft, setTimeLeft] = useState(() => calculateTimeLeft(targetDate));
 
   useEffect(() => {
@@ -81,7 +83,7 @@ export function Countdown() {
 
         <ScrollReveal delay={0.5} className="mt-8">
           <p className="font-serif text-sm sm:text-base text-ivory-200/60 italic">
-            December 14, 2026 at 7:00 AM
+            {WEDDING.date} at {WEDDING.time}
           </p>
         </ScrollReveal>
       </div>

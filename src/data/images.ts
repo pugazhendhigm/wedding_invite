@@ -15,14 +15,16 @@ export const IMAGES = {
 export const WEDDING = {
   groom: 'Karthi',
   bride: 'Varuna',
-  date: 'December 14, 2026',
-  dateShort: '14.12.2026',
-  time: '7:00 AM',
-  venue: 'Sri Venkateswara Kalyana Mandapam',
-  venueAddress: 'T. Nagar, Chennai, Tamil Nadu 600017',
-  mapUrl: 'https://maps.google.com/?q=Sri+Venkateswara+Kalyana+Mandapam+T+Nagar+Chennai',
-  whatsappUrl: 'https://wa.me/919876543210?text=We%20are%20delighted%20to%20attend%20Karthi%20%26%20Varuna%27s%20wedding!',
-  rsvpDeadline: 'November 30, 2026',
+  date: 'February 11, 2027',
+  dateShort: '11.02.2027',
+  time: '10:00 AM',
+  dateTime: '2027-02-11T10:00:00+05:30',
+  venue: 'Varadharaja Perumal Temple',
+  venueAddress: 'Kanchipuram',
+  mapUrl: 'https://maps.app.goo.gl/8k8MDVkq4GhZKq1C6',
+  mapEmbedUrl: 'https://www.google.com/maps?q=RP9F%2BPWJ%20West%20Mada%20Street%2C%20Sannidhi%20St%2C%20Kanchipuram%2C%20Tamil%20Nadu%20631501&output=embed',
+  whatsappUrl: 'https://wa.me/919791192672?text=We%20are%20delighted%20to%20attend%20Karthi%20%26%20Varuna%27s%20wedding!',
+  rsvpDeadline: 'January 30, 2027',
 };
 
 export const TIMELINE = [
@@ -35,9 +37,19 @@ export const TIMELINE = [
 ];
 
 export const BLESSINGS = [
-  { relation: 'Parents of the Groom', names: 'Mr. Suresh & Mrs. Lakshmi', tamil: 'வாழ்த்துக்கள்' },
-  { relation: 'Parents of the Bride', names: 'Mr. Ramesh & Mrs. Padma', tamil: 'ஆசீர்வாதம்' },
-  { relation: 'Grandparents', names: 'With blessings from the elders of both families', tamil: 'பாசற்ற வாழ்த்து' },
+  {
+    relation: 'Parents of the Groom',
+    names: [
+      'Sankaranarayanan & Hemamalini Sankaranarayanan',
+      'Hariharan & Chandrika Hariharan',
+    ],
+    tamil: 'வாழ்த்துக்கள்',
+  },
+  {
+    relation: 'Parents of the Bride',
+    names: ['Ramachandran & Vijaya Sujatha'],
+    tamil: 'ஆசீர்வாதம்',
+  },
 ];
 
 export const TAMIL_QUOTE = 'இரு குடும்பங்கள் இணையும் புனித நேரம்';
